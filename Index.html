@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuthenticDesigner</title>
+  <link rel="icon" type="image/x-icon" href="image.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .btn-warning {
+    width: 100%;
+    padding: 10px;
+    background: #FF8000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    
+  }
+  
+  .btn-warning:hover {
+    background: #fff;
+  }
+</style>
+</head>
+<body id="home">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img src="https://www.authenticdesigners.net/Content/assets/img/logo-light.png" alt="Company Logo" style="width: 150px; height: auto; margin-left: 80px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="color: crimson; background-color: rgb(237, 231, 231);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="ms-auto d-flex align-items-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Contact-us">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="me-3" >
+          <button href="#contact-section" class="btn btn-primary ">Enquiry Now</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Newsletter Popup -->
+<div id="newsletterPopup" class="popup">
+  <div class="popup-content">
+    <button class="close-btn">&times;</button>
+    <h2 style="color: white;">Contact-Us</h2>
+    <form id="newsletterForm" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label" style="color: aliceblue;">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label" style="color: aliceblue;">Email</label>
+        <input type="email" class="form-control" name="email" placeholder="Enter your email" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+  </div>
+</div>
+
+  
+<section>
+  <section id="contact-section" class="contact-section">
+    <div class="container-fluid p-0">
+      <div class="position-relative">
+        <!-- Background Image -->
+        <img src="h3.png" alt="Background Image" class="img-fluid background-image">
+        <div class="overlay"></div>
+  
+        <div class="text-block">
+          <h2 style="color: aliceblue;"> Inventing The Best Steels For <br>A Better World</h2>
+          <p>
+           Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Reiciendis nam temporibus corporis deserunt quis ut iste.
+           <br> Laborum ad eius id quos, nostrum sed aliquam eaque! <br>Ad doloremque inventore rerum alias?
+           Lorem ipsum dolor sit, <br>
+          </p>
+          <!-- CTA Button -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactFormModal">
+  Contact Us
+</button>
+
+<!-- Contact Form Modal -->
+<div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background-color: #2975c2;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactFormModalLabel" >Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contactFormDesktop" method="post">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning w-100">Submit</button>
+        </form>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+        
+        <div class="form-container position-absolute top-50 end-10 translate-middle-y bg-purple p-4 rounded shadow-lg d-none d-md-block">
+          <h2 class="text-white text-center">Contact-Us</h2>
+          <form class="AVAST_PAM_nonloginform" id="contactForm" method="post">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Enter your name" name="name" required="">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Enter your phone" name="phone" required="">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Enter your email" name="email" required="">
+            </div>
+            <div class="mb-3">
+              <input type="date" class="form-control"  placeholder="Enter date" name="date"  required="">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" name="message" rows="4" required=""></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning ">Submit</button>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Form Container (Mobile) -->
+      <div class="form-container bg-purple p-4 rounded shadow-lg d-md-none mt-4">
+        <h2 class="text-white text-center">Contact-Us</h2>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control"placeholder="Name" required="">
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Phone" required="">
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" required="">
+          </div>
+          <div class="mb-3">
+            <input type="date" class="form-control" required="">
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="Message" rows="4" required=""></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning w-100">Submit</button>
+        </form>
+      </div> 
+    </div>
+  </section>
+</section>
+<!-- Thank You Popup -->
+<div class="popup1" id="thankYouPopup">
+  <div class="popup1-content">
+    <div class="popup1-image">
+      <img src="thankyou.png" alt="Thank You Image" />
+    </div>
+    <h2>Thank You!</h2>
+    <p>Your submission has been received. We appreciate your input!</p>
+    <button  class="close-Button">Close</button>
+  </div>
+</div>
+
+
+  <section id="about-us" class="about-us">
+    
+  
+    <div class="content-container">
+     
+      <div class="left-image">
+        <img src="h2.png" alt="Left Image">
+      </div>
+
+      <div class="right-content">
+        <h2 style="color: #212529;">Who We Are</h2>
+        <hr style="color: red; height: 3px;">
+        <p style="color: #282529;">
+          Established in 1996, Authentic Designers has earned a prominent name in the market by offering a comprehensive array of Packaging Machines in wide varieties. Apart from this, we are offering Automatic Form Fill and Seal Machines, Automatic Packaging Machines, and Filling Machines. These products are also exported to international countries.
+          We are committed to delivering high-speed functionality, with fully automated features and compact size. Our main aim is to fully satisfy our customers, ensuring the best results in every task we complete. Owning to an advanced manufacturing unit that is situated in the best locality of Noida, Uttar Pradesh, India, we are able to process excellent range of product that completely adhere to latest market & industrial norms.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-12 mb-4">
+          <h2 class="section-title">Our Services</h2>
+          <p class="lead">We provide top-quality machine manufacturing services.</p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-3 mb-3" id="first">
+          <div class="card shadow-sm border-light" >
+            <img src="Automatic Pouch Packing Machine.webp" class="card-img-top" alt="Service 1 Image">
+            <div class="card-body">
+              <h5 class="card-title">Automatic Pouch Packing Machine</h5>
+              <p class="card-text">The Automatic Pouch Packing Machine is a state-of-the-art solution for efficient packaging in industries like food, beverages, and pharmaceuticals. Designed for speed and precision, it handles various pouch types with ease. Its robust build and advanced automation ensure reliability, enhancing productivity while maintaining product safety and quality standards.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-3 mb-3" id="second">
+          <div class="card shadow-sm border-light">
+            <img src="Automatic Pouch Packing Machine.webp" class="card-img-top" alt="Service 2 Image">
+            <div class="card-body">
+              <h5 class="card-title">Automatic Labeling Machine</h5>
+              <p class="card-text">The Automatic Labeling Machine streamlines the labeling process with precision and speed. Ideal for industries handling bottles, jars, and containers, it ensures consistent labeling accuracy. With cutting-edge sensors and adjustable settings, it enhances production efficiency. This versatile machine is perfect for pharmaceuticals, beverages, and consumer goods industries, ensuring high-quality output.</p>
+            </div>
+          </div>
+        </div>
+        <!-- asdsdf -->
+        <div class="col-md-3 mb-3" id="third">
+          <div class="card shadow-sm border-light">
+            <img src="owder Filling Machine.webp" class="card-img-top" alt="Service 2 Image">
+            <div class="card-body">
+              <h5 class="card-title">Powder Filling Machine</h5>
+              <p class="card-text">A powder filling machine is an automated device used in industries to efficiently and accurately fill powders into containers. These machines are equipped with digital controls, offering precision, speed, and consistency. Ideal for pharmaceutical, food, and chemical sectors, they ensure high-quality packaging with minimal human intervention and waste."</p>
+            </div>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-3 mb-3" id="fourth">
+          <div class="card shadow-sm border-light">
+            <img src="Premade Pouch Machine.webp" class="card-img-top" alt="Service 3 Image">
+            <div class="card-body">
+              <h5 class="card-title">Premade Pouch Machine</h5>
+              <p class="card-text">Premade pouch machines streamline packaging processes with precision and efficiency. Designed for versatility, they handle various pouch sizes and materials, ensuring consistent sealing and filling. Ideal for industries like food, pharmaceuticals, and cosmetics, these machines enhance productivity while maintaining quality standards in a compact, automated setup.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="testimonials-section">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Customers Say</h2>
+      <div class="row">
+        <!-- Testimonial 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-item text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf5TrSLDMaH2FynRXSX2M8fmXBcC-Iug6Scg&s" alt="Testimonial 1" class="rounded-circle mb-3" width="100">
+            <p class="testimonial-content">"The product quality exceeded my expectations. I'm glad I chose this company for my packaging needs. Highly recommended!"</p>
+            <h5 class="testimonial-author">Ravi Kumar</h5>
+            <p class="testimonial-position">Founder, Ravi Enterprises</p>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-item text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJGy0_3AcCZTpIQvV6Deo5UCEx8hFcxyTeUqcZvgb76LsxCD5b83qZeDo&s" alt="Testimonial 2" class="rounded-circle mb-3" width="100">
+            <p class="testimonial-content">"Excellent customer service and a top-notch machine. It has made a huge difference in our production efficiency."</p>
+            <h5 class="testimonial-author">Priya Sharma</h5>
+            <p class="testimonial-position">CEO, Sharma Industries</p>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-item text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSNL2iRdQHMbegKzOcG6WOMAD1x4eki2_KY8sWhlLqubfTpAK3JqQNudQ&s" alt="Testimonial 3" class="rounded-circle mb-3" width="100">
+            <p class="testimonial-content">"A truly reliable partner in the packaging business. The machines are durable, and the team is always responsive."</p>
+            <h5 class="testimonial-author">Anil Verma</h5>
+            <p class="testimonial-position">Director, Verma Packaging</p>
+          </div>
+        </div>
+        <!-- Testimonial 4 -->
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-item text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuSank5MhUrF9SjLZQKPQ0IlqzknRrLtq1smTQHTdGfjzrD6tUcY2O2CQ&s" alt="Testimonial 4" class="rounded-circle mb-3" width="100">
+            <p class="testimonial-content">"Fantastic experience with this team! Their machine saved us both time and cost in our production process."</p>
+            <h5 class="testimonial-author">Sita Patel</h5>
+            <p class="testimonial-position">COO, Patel Enterprises</p>
+          </div>
+        </div>
+        <!-- Testimonial 5 -->
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-item text-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ufqOtwAsHBYEXFNrPo-TziYH6Oa31ZbvOoKvn66-qh1IJKyhiROXP7Q&s" alt="Testimonial 5" class="rounded-circle mb-3" width="100">
+            <p class="testimonial-content">"I’ve seen a significant improvement in our output thanks to the equipment we purchased. The quality is unbeatable!"</p>
+            <h5 class="testimonial-author">Vijay Gupta</h5>
+            <p class="testimonial-position">Founder, Gupta Packaging</p>
+          </div>
+        </div>
+        <!-- Testimonial 6 -->
+        <div class="col-md-4 mb-4">
+          <div class="testimonial-item text-center">
+            <img src="data:image/jpeg;base64,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" alt="Testimonial 6" class="rounded-circle mb-3" width="100">
+            <p class="testimonial-content">"Their after-sales service is exceptional. The team is always available to support and guide us whenever needed."</p>
+            <h5 class="testimonial-author">Neelam Reddy</h5>
+            <p class="testimonial-position">Managing Director, Reddy & Sons Pvt. Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clients-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Clients</h2>
+      <div class="clients-slider">
+        <div class="slider-track">
+          <!-- Client Logos -->
+          <div class="client-logo"><img src="https://www.authenticdesigners.net/Content/Manage/logoImage/40963Crystal_Agro_chemicas___Fertilizers.gif" alt="Client 1"></div>
+          <div class="client-logo"><img src="https://www.authenticdesigners.net/Content/Manage/logoImage/207773NTL.png" alt="Client 2"></div>
+          <div class="client-logo"><img src="https://www.authenticdesigners.net/Content/Manage/logoImage/220166Ds_grop.jpg" alt="Client 3"></div>
+          <div class="client-logo"><img src="https://www.authenticdesigners.net/Content/Manage/logoImage/241942Akums_Drugs___Pharmaceutical_ltd.png" alt="Client 4"></div>
+          <div class="client-logo"><img src="https://www.authenticdesigners.net/Content/Manage/logoImage/151225darrick_insecticides.jpg" alt="Client 5"></div>
+          <div class="client-logo"><img src="https://www.authenticdesigners.net/Content/Manage/logoImage/207545Freshka.jpg" alt="Client 6"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stats-section">
+    <div class="container">
+      <h2 class="text-center">Our Achievements</h2>
+      <div class="row">
+        <!-- Clients -->
+        <div class="col-md-3 col-6 text-center mb-4">
+          <div class="stat">
+            <h3 class="count" data-target="1500">0</h3>
+            <p>Clients</p>
+          </div>
+        </div>
+        <!-- Satisfied Customers -->
+        <div class="col-md-3 col-6 text-center mb-4">
+          <div class="stat">
+            <h3 class="count" data-target="500">0</h3>
+            <p>Satisfied Customers</p>
+          </div>
+        </div>
+        <!-- Awards -->
+        <div class="col-md-3 col-6 text-center mb-4">
+          <div class="stat">
+            <h3 class="count" data-target="25">0</h3>
+            <p>Awards</p>
+          </div>
+        </div>
+        <!-- Types of Products -->
+        <div class="col-md-3 col-6 text-center mb-4">
+          <div class="stat">
+            <h3 class="count" data-target="120">0</h3>
+            <p>Types of Products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  <section class="faq-section py-5">
+    <div class="container">
+      <div class="row">
+        <!-- FAQ Section -->
+        <div class="col-lg-6">
+          <h2 class="mb-4">Frequently Asked Questions</h2>
+          <div class="accordion" id="faqAccordion">
+            <!-- Question 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is your return policy?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Our return policy allows you to return items within 30 days of purchase. Please ensure the product is in its original condition.
+                </div>
+              </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How can I track my order?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can track your order through the tracking link sent to your email or by logging into your account on our website.
+                </div>
+              </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Do you offer international shipping?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, we offer international shipping. Please check our shipping policies for more details on delivery times and charges.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Image Section -->
+        <div class="col-lg-6 text-center">
+          <img src="https://plus.unsplash.com/premium_photo-1675508139501-5312e9b51e27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGluZHVzdHJ5fGVufDB8fDB8fHww" alt="FAQ Image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+      
+    </section>
+   
+
+ 
+  <footer class="text-white pt-5 pb-4">
+    
+    <div class="container">
+      
+      <div class="row">
+        
+  <svg viewBox="0 0 1920 360" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path fill="#052f5f" d="M0 67
+      C 273,183
+        822,-40
+        1920.00,106               
+      V 359 
+      H 0 
+      V 67
+      Z" style="fill: #085694;">
+      <animate repeatCount="indefinite" fill="url(#grad1)" attributeName="d" dur="15s" attributeType="XML" values="
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+
+        M0 77 
+        C 473,-40
+          1222,283
+          1920,136 
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+
+        M0 77 
+        C 973,260
+          1722,-53
+          1920,120 
+        V 359 
+        H 0 
+        V 67 
+        Z; 
+
+        M0 77 
+        C 473,283
+          822,-40
+          1920,116 
+        V 359 
+        H 0 
+        V 67 
+        Z
+      ">
+      </animate>
+    </path>
+  </svg>
+     
+        <!-- First Section: Company Logo and Description -->
+        <div class="col-md-3">
+          <div class="footer-logo mb-4">
+            <img src="https://www.authenticdesigners.net/Content/assets/img/logo-light.png" alt="Company Logo" class="img-fluid mb-3">
+          </div>
+          <p class=" ">We are a leading company providing innovative solutions with a customer-first approach. Our commitment to quality, service, and customer satisfaction has made us a trusted partner for businesses worldwide.</p>
+        </div>
+  
+        <!-- Second Section: Navigation Links -->
+        <div class="col-md-3">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class=" text-white ">Home</a></li>
+            <li><a href="#about-us" class="  text-white">About Us</a></li>
+            <li><a href="#services" class="  text-white">Services</a></li>
+            <li><a href="#products" class="  text-white">Products</a></li>
+            <li><a href="#contact-section" class=" text-white ">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Third Section: Our Products -->
+        <div class="col-md-3">
+          <h5 class="text-white mb-3">Our Products</h5>
+          <ul class="list-unstyled">
+            <li><a href="#first" class="text-white ">Automatic Pouch Packing Machine</a></li>
+            <li><a href="#second" class=" text-white">Automatic Labeling Machine</a></li>
+            <li><a href="#third" class="  text-white">Powder Filling Machine</a></li>
+            <li><a href="#fourth" class=" text-white ">Premade Pouch Machine</a></li>
+          </ul>
+        </div>
+  
+        <!-- Fourth Section: Contact Info -->
+        <div class="col-md-3">
+          <h5 class="text-white mb-3">Contact Information</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt  "></i> Sector-2 D-80,Noida 201301</li>
+            <li><i class="fas fa-phone-alt "></i> +91-56787890</li>
+            <li><i class="fas fa-envelope "></i> digitalvyapaar@gmail.com</li>
+            <br>
+            <button id="ctaButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactFormModal">
+              Enquiry Now
+            </button>
+            <!-- Contact Form Modal -->
+<div class="modal fade" id="contactFormModal" tabindex="-1" aria-labelledby="contactFormModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactFormModal">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="contactFormModal" method="post" style="background-color: #2975c2;">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </ul>
+          
+            
+          </div>
+          
+        </div>
+        
+        
+      </div>
+      <div class="copyrights  text-center">
+        <p class="mb-0">&copy; 2024 Your Company. All rights reserved.</p>
+        <p class=" " >Designed by <a href="https://www.digitalvyapaar.com/" target="_blank" style="color: #FF8000;">DigitalVyapaar</a></p>
+      </div>
+    </div>
+  
+    <!-- Social Media Icons (Right corner) -->
+   
+  
+    <!-- Copyrights and Designer Links Section -->
+    
+    <div class="whatsapp-button">
+      <a href="https://wa.me/918726685094" target="_blank">
+        <img src="whatsAppIcon.png" alt="WhatsApp" />
+      </a>
+    </div>
+    <div class="telephone-button">
+      <a href="https://call.me/918726685094" target="_blank">
+        <img src="telephone_724664.png" alt="Telephone" />
+      </a>
+    </div>
+    
+
+
+  </footer>
+  
+  
+  
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
